@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<header>
+    <h1>Minha Loja</h1>
+    <p>Bem-vindo à minha loja de roupas e acessórios!</p>
+</header>
+
+<main>
+    <h2>Nossos produtos</h2>
+
+    <section class="produtos">
+
+        <article class="produto">
+            <div class="conteudo">
+                <img class="produto-camisa" src="/Trilhas/fotos/camisa.jpg" alt="Camiseta">
+                <h3>Camiseta</h3>
+                <p>Camiseta básica e confortável.</p>
+                <p class="preco">R$ 50,00</p>
+                <a href="#camiseta"> Ver mais</a>
+                  <div id="camiseta" class="modal">
+               <div class="modal-conteudo">
+                  <a href="#" class="fechar"> X </a>
+                  <img src="/Trilhas/fotos/camisa.jpg" alt="Camiseta">
+                  <h2>Camiseta</h2>
+                  <p>Camiseta básica e confortável.</p>  
+                  <button class="bnt" onclick="simularCompraUnica('camiseta')">
+                      Simular compra </button>
+             </div>
+                  </div>
+                </div>   
+            </article>
+
+        <article class="produto">
+            <div class="conteudo">
+                <img class="pruduto-camisa" src="/Trilhas/fotos/calca.png" alt="Calça Jeans">
+                <h3>Calça Jeans</h3>
+                <p>Calça jeans para o dia a dia.</p>
+                <p class="preco">R$ 100,00</p>
+                <a href="#calca"> Ver mais</a>
+                  <div id="calca" class="modal">
+               <div class="modal-conteudo">
+                  <a href="#" class="fechar"> X </a>
+                  <img src="/Trilhas/fotos/calca.png" alt="Calça Jeans">
+                  <h2>Calça Jeans</h2>
+                  <p>Calça jeans para o dia a dia.</p>  
+                  <button class="bnt" onclick="simularCompraUnica('calca')">
+                      Simular compra </button>
+             </div>
+            </div>
+        </article>
+
+        <article class="produto">
+            <div class="conteudo">
+              <img class="produto-camisa" src="/Trilhas/fotos/tenis.png" alt="Tênis">
+                 <h3>Tênis</h3>
+                 <p>Tênis confortável para passeios.</p>
+                 <p class="preco">R$ 200,00</p>
+                   <a href="#tenis"> Ver mais</a>
+                  <div id="tenis" class="modal">
+               <div class="modal-conteudo">
+                  <a href="#" class="fechar"> X </a>
+                  <img src="/Trilhas/fotos/tenis.png" alt="Tênis">
+                  <h2>Tênis confortável</h2>
+                  <p>Tenis muito bom</p>  
+                  <button class="bnt" onclick="simularCompraUnica('tenis')">
+                      Simular compra </button>
+             </div>
+            </div>  
+         </article>
+
+    </section>
+
+    <section class="como-comprar">
+        <h2>Comprar todos os produtos</h2>
+        <p>
+            Clique no botão abaixo e informe
+            a quantidade de cada produto.
+        </p>
+        <button class="bnt" onclick="simularCompra()">
+            Simular compra
+        </button>
+    </section>
+</main>
+<script src="script.js"></script>
+
+<footer class="rodape"> 
+  <p class="copyright"> &copy; 2026 Minha Loja. Todos os direitos reservados.</p>
+  <p class="author"> Aluno : Pedro William Furtado Cabral</a></p>
+  <p class="github"> <a href="http://github.com/Pedrim447" target="_blank">GitHub</a></p>
+</footer>
+
+</body>
+</html>
